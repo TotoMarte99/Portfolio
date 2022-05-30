@@ -1,0 +1,306 @@
+@media screen and (min-width: 480px) {
+  header {
+    text-align: center;
+    color: #D0D0D0;
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-weight: 700;
+  }
+
+  h1 {
+    font-weight: 700;
+  }
+
+  .AboutMe {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #494747;
+    border-radius: 29px;
+    opacity: 80%;
+    margin: 20px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .AboutMe {
+    display: flex;
+    margin: 50px;
+    color: #D0D0D0;
+    background-color: #494747;
+    border-radius: 29px;
+    opacity: 80%;
+    margin: 80px;
+  }
+  .AboutMe h2 {
+    font-size: 40px;
+  }
+
+  .img {
+    text-align: center;
+    height: 380px;
+    width: 400px;
+    border-radius: 28px;
+    margin-right: 40px;
+    margin-bottom: 60px;
+    margin-top: 0%;
+  }
+
+  .Texto_AboutMe .h2 {
+    font-size: 23px;
+  }
+
+  .Servicios {
+    font-size: 30px;
+  }
+  .Servicios h2 {
+    text-transform: capitalize;
+  }
+
+  .proyectos h1 {
+    font-size: 30px;
+  }
+  .proyectos .card-body {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 950px) {
+  .AboutMe {
+    display: flex;
+    margin: 50px;
+    color: #D0D0D0;
+    background-color: #494747;
+    border-radius: 29px;
+    opacity: 80%;
+    margin: 80px;
+  }
+  .AboutMe h1 {
+    margin-left: 80px;
+  }
+  .AboutMe .h2 {
+    color: #A09898;
+    margin-left: 150px;
+  }
+
+  .Servicios {
+    display: flex;
+  }
+  .Servicios p {
+    font-size: 20px;
+    gap: 0px;
+    text-align: justify;
+    padding: 20px;
+  }
+
+  .AboutMe {
+    display: flex;
+    margin: 50px;
+    padding-top: 100px;
+    color: #D0D0D0;
+    background-color: #494747;
+    border-radius: 29px;
+    opacity: 80%;
+  }
+
+  .Texto_AboutMe {
+    position: relative;
+    margin-top: -40px;
+    text-align: center;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Texto_AboutMe h1 {
+    font-size: 50px;
+    padding-bottom: 50px;
+    margin-top: -220px;
+  }
+  .Texto_AboutMe h2 {
+    font-size: 40px;
+    color: #D0D0D0;
+  }
+
+  .img {
+    display: flex;
+    justify-content: flex-end;
+    width: 300px;
+    height: 300px;
+    border-radius: 28px;
+    margin-left: 50px;
+    margin-top: -40px;
+  }
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Play", sans-serif;
+}
+
+html body {
+  background-image: url(/Img/black-g950d18492_1280.png);
+  opacity: 1;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  color: #D0D0D0;
+  font-size: 20px;
+  line-height: 23px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  font-weight: 700;
+}
+
+.AboutMe {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #494747;
+  border-radius: 29px;
+  opacity: 80%;
+  margin: 10px;
+}
+
+.Texto_AboutMe {
+  text-align: center;
+  color: #A09898;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+}
+.Texto_AboutMe h1 {
+  color: #D0D0D0;
+  font-weight: 700;
+}
+.Texto_AboutMe h2 {
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.img {
+  border-radius: 22px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.Servicios {
+  width: 100%;
+  text-align: center;
+  margin-top: 80px;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #494747;
+  border-radius: 29px;
+  opacity: 80%;
+  margin: 10px;
+}
+.Servicios h2 {
+  color: #D0D0D0;
+  font-weight: 700;
+}
+.Servicios p {
+  color: #A09898;
+}
+
+.proyectos {
+  width: 100%;
+  background-color: #494747;
+  color: #D0D0D0;
+  margin: 10px;
+  border-radius: 29px;
+  opacity: 80%;
+}
+.proyectos h1 {
+  text-align: center;
+  padding: 20px;
+  font-family: "Play", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  padding: 20px;
+  border: 0;
+}
+fieldset .nombre {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 70%;
+  font-weight: 600;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid rgb(82, 79, 79);
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: #000000 5px 5px 7px;
+}
+fieldset .apellido {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 70%;
+  font-weight: 600;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid rgb(82, 79, 79);
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: #000000 5px 5px 7px;
+}
+fieldset .email {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 70%;
+  font-weight: 600;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid rgb(82, 79, 79);
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: #000000 5px 5px 7px;
+}
+fieldset textarea {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 70%;
+  font-weight: 600;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid rgb(82, 79, 79);
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: #000000 5px 5px 7px;
+}
+fieldset .mandar {
+  color: rgb(255, 255, 255);
+  border-style: none;
+  cursor: pointer;
+  background-color: #212529;
+  width: 30%;
+  padding: 15px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  font-weight: 600;
+}
+fieldset legend {
+  display: block;
+  width: 100%;
+  color: #D0D0D0;
+  text-align: center;
+  font-size: 20px;
+}
+fieldset textarea {
+  outline: none;
+}/*# sourceMappingURL=estilos.css.map */

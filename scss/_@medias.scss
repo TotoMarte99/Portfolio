@@ -1,0 +1,158 @@
+//Tamaño Telefono en Horizontal o Tablet Pequeña
+@media screen and (min-width: 480px) {
+    header {
+        text-align: center;
+        color: $color_fuente;
+        font-size: 20px;
+        line-height: 23px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        font-weight: 700;
+    }
+
+    h1 {
+        font-weight: 700;
+    }
+
+    .AboutMe {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        background-color: $color_containers;
+        border-radius: $border_containers;
+        opacity: $opacidad_containers;
+        margin: 20px;
+    }
+}
+
+//Tablets
+@media screen and (min-width: 767px) {
+    .AboutMe {
+        display: flex;
+        margin: 50px;
+        color: $color_fuente;
+        background-color: $color_containers;
+        border-radius: $border_containers;
+        opacity: $opacidad_containers;
+        margin: 80px;
+
+        h2 {
+            font-size: 40px;
+
+        }
+    }
+
+
+    .img {
+        text-align: center;
+        height: 380px;
+        width: 400px;
+        border-radius: 28px;
+        margin-right: 40px;
+        margin-bottom: 60px;
+        margin-top: 0%;
+    }
+
+    .Texto_AboutMe {
+        .h2 {
+            font-size: 23px;
+        }
+
+    }
+
+    .Servicios {
+        font-size: 30px;
+        h2 {
+            text-transform: capitalize;
+        }
+    }
+
+    .proyectos {
+        h1 {
+            font-size: 30px;
+        }
+
+        .card-body {
+            font-size: 20px;
+        }
+    }
+}
+
+//Pantallas Computadora
+@media screen and (min-width:950px) {
+    .AboutMe {
+        display: flex;
+        margin: 50px;
+        color: $color_fuente;
+        background-color: $color_containers;
+        border-radius: $border_containers;
+        opacity: $opacidad_containers;
+        margin: 80px;
+
+        h1{
+            margin-left: 80px;
+        }
+
+        .h2 {
+            color: $color_textos;
+            margin-left: 150px;
+
+        }
+    }
+    
+    .Servicios{
+        display: flex;
+        p{
+            font-size: 20px;
+            gap: 0px;
+            text-align: justify;
+            padding: 20px;
+        }
+    }
+
+
+    .AboutMe {
+        display: flex;
+        margin: 50px;
+        padding-top: 100px;
+        color: $color_fuente;
+        background-color: $color_containers;
+        border-radius: $border_containers;
+        opacity: $opacidad_containers;
+    }
+
+    .Texto_AboutMe {
+        position: relative;
+        margin-top: -40px;
+        text-align: center;
+        margin-left: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            font-size: 50px;
+            padding-bottom: 50px;
+            margin-top: -220px;
+        }
+
+        h2 {
+            font-size: 40px;
+            color: $color_fuente;
+        }
+    }
+
+    .img {
+        display: flex;
+        justify-content: flex-end;
+        width: 300px;
+        height: 300px;
+        border-radius: 28px;
+        margin-left: 50px;
+        margin-top: -40px;
+    }
+
+
+}
+
