@@ -1,3 +1,12 @@
+@media screen and (min-width: 100px) and (max-width: 470px) {
+  header p {
+    font-size: 15px;
+  }
+
+  .AboutMe img {
+    width: 180px;
+  }
+}
 @media screen and (min-width: 480px) {
   header {
     text-align: center;
@@ -14,6 +23,7 @@
   }
 
   .AboutMe {
+    width: 80%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -26,12 +36,12 @@
 @media screen and (min-width: 767px) {
   .AboutMe {
     display: flex;
-    margin: 50px;
     color: #D0D0D0;
     background-color: #494747;
     border-radius: 29px;
     opacity: 80%;
     margin: 80px;
+    margin-left: 20px;
   }
   .AboutMe h2 {
     font-size: 40px;
@@ -48,7 +58,7 @@
   }
 
   .Texto_AboutMe .h2 {
-    font-size: 23px;
+    font-size: 18px;
   }
 
   .Servicios {
@@ -56,6 +66,9 @@
   }
   .Servicios h2 {
     text-transform: capitalize;
+  }
+  .Servicios p {
+    font-size: 20px;
   }
 
   .proyectos h1 {
@@ -68,7 +81,6 @@
 @media screen and (min-width: 950px) {
   .AboutMe {
     display: flex;
-    margin: 50px;
     color: #D0D0D0;
     background-color: #494747;
     border-radius: 29px;
@@ -85,15 +97,17 @@
 
   .Servicios {
     display: flex;
+    margin-right: 500px;
   }
   .Servicios p {
     font-size: 20px;
     gap: 0px;
     text-align: justify;
-    padding: 20px;
+    padding: 30px;
   }
 
   .AboutMe {
+    width: 100%;
     display: flex;
     margin: 50px;
     padding-top: 100px;
@@ -141,7 +155,7 @@
 }
 
 html body {
-  background-image: url(/Img/black-g950d18492_1280.png);
+  background-image: url(../Img/black-g950d18492_1280.png);
   opacity: 1;
   background-size: cover;
   overflow-x: hidden;
@@ -165,7 +179,7 @@ header {
   background-color: #494747;
   border-radius: 29px;
   opacity: 80%;
-  margin: 10px;
+  margin: 10px auto;
 }
 
 .Texto_AboutMe {
@@ -188,7 +202,6 @@ header {
 
 .img {
   border-radius: 22px;
-  margin-bottom: 5px;
   margin-top: 5px;
 }
 
@@ -201,7 +214,7 @@ header {
   background-color: #494747;
   border-radius: 29px;
   opacity: 80%;
-  margin: 10px;
+  margin: 10px auto;
 }
 .Servicios h2 {
   color: #D0D0D0;
@@ -215,7 +228,7 @@ header {
   width: 100%;
   background-color: #494747;
   color: #D0D0D0;
-  margin: 10px;
+  margin: 10px auto;
   border-radius: 29px;
   opacity: 80%;
 }
@@ -223,8 +236,13 @@ header {
   text-align: center;
   padding: 20px;
   font-family: "Play", sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
+}
+
+footer {
+  width: 100%;
+  margin: 0%;
 }
 
 fieldset {

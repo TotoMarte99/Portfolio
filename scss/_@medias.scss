@@ -1,3 +1,19 @@
+@media screen and (min-width: 100px) and (max-width:470px){
+    header{
+        p{
+            font-size: 15px;
+        }
+    }
+    
+    .AboutMe{
+        img{
+            width: 180px;
+        }
+    }
+}
+
+
+
 //Tamaño Telefono en Horizontal o Tablet Pequeña
 @media screen and (min-width: 480px) {
     header {
@@ -15,6 +31,7 @@
     }
 
     .AboutMe {
+        width: 80%;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -29,12 +46,12 @@
 @media screen and (min-width: 767px) {
     .AboutMe {
         display: flex;
-        margin: 50px;
         color: $color_fuente;
         background-color: $color_containers;
         border-radius: $border_containers;
         opacity: $opacidad_containers;
         margin: 80px;
+        margin-left: 20px;
 
         h2 {
             font-size: 40px;
@@ -55,15 +72,19 @@
 
     .Texto_AboutMe {
         .h2 {
-            font-size: 23px;
+            font-size: 18px;
         }
 
     }
 
     .Servicios {
         font-size: 30px;
+        
         h2 {
             text-transform: capitalize;
+        }
+        p{
+            font-size: 20px;
         }
     }
 
@@ -82,7 +103,6 @@
 @media screen and (min-width:950px) {
     .AboutMe {
         display: flex;
-        margin: 50px;
         color: $color_fuente;
         background-color: $color_containers;
         border-radius: $border_containers;
@@ -102,16 +122,19 @@
     
     .Servicios{
         display: flex;
+        margin-right: 500px;
         p{
             font-size: 20px;
             gap: 0px;
             text-align: justify;
-            padding: 20px;
+            padding: 30px;
+            
         }
     }
 
 
     .AboutMe {
+        width: 100%;
         display: flex;
         margin: 50px;
         padding-top: 100px;

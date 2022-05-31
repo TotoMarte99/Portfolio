@@ -15,10 +15,11 @@ $border_containers: 29px;
 }
 
 html body{
-    background-image: url(/Img/black-g950d18492_1280.png);
+    background-image: url(../Img/black-g950d18492_1280.png);
     opacity: 1;
     background-size: cover;
     overflow-x: hidden;
+    
     
 }
 
@@ -40,7 +41,8 @@ header{
     background-color: $color_containers;
     border-radius: $border_containers;
     opacity: $opacidad_containers;
-    margin: 10px;
+    margin: 10px auto;
+
 }
 .Texto_AboutMe{
     text-align: center;
@@ -62,7 +64,6 @@ header{
 }
 .img{
     border-radius: 22px;
-    margin-bottom: 5px;
     margin-top: 5px;
 }
 
@@ -75,7 +76,7 @@ header{
     background-color: $color_containers;
     border-radius: $border_containers;
     opacity: $opacidad_containers;
-    margin: 10px;
+    margin: 10px auto;
     h2{
         color: $color_fuente;
         font-weight: 700;
@@ -88,7 +89,7 @@ header{
     width: 100%;
     background-color: $color_containers;
     color: $color_fuente;
-    margin: 10px;
+    margin: 10px auto;
     border-radius: $border_containers;
     opacity: $opacidad_containers;
     
@@ -96,9 +97,13 @@ header{
         text-align: center;
         padding: 20px;
         font-family: $fuente;
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 700;
     }
+}
+footer{
+    width: 100%;
+    margin: 0%;
 }
 
 
