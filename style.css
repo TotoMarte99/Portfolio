@@ -1,4 +1,4 @@
-* {
+ * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -14,8 +14,7 @@
             overflow-x: hidden;
         }
 
-       
-        /* Lluvia estilo matrix */
+        /* Matrix rain effect */
         #matrix-canvas {
             position: fixed;
             top: 0;
@@ -31,7 +30,7 @@
             z-index: 1;
         }
 
-        /* Effecto Glitch */
+        /* Glitch  */
         @keyframes glitch {
             0% {
                 transform: translate(0);
@@ -80,7 +79,7 @@
             animation: glitch 0.1s ease-in-out infinite;
         }
 
-        /* Navigacion */
+        /* Navegacion */
         nav {
             position: fixed;
             top: 0;
@@ -101,6 +100,12 @@
             margin: 0 auto;
         }
 
+        nav li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         nav a {
             color: #0f0;
             text-decoration: none;
@@ -111,6 +116,9 @@
             transition: all 0.3s ease;
             position: relative;
             text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
         nav a::before {
@@ -121,13 +129,21 @@
             content: ' />';
         }
 
- 
         nav a:hover {
             color: #00ff00;
             text-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
         }
 
-        /* Seccion del Hero */
+        .nav-icon {
+            display: none;
+            font-size: 1.5rem;
+        }
+
+        .nav-label {
+            display: inline;
+        }
+
+        /* Hero Section */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -223,14 +239,7 @@
             left: 0;
         }
 
-        .btn-git{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-       
-
-        /* Secciones */
+        /* Sections */
         section {
             padding: 6rem 5%;
             max-width: 1400px;
@@ -265,7 +274,7 @@
             box-shadow: 0 0 10px #0f0;
         }
 
-        /* Seccion sobre mi */
+        /* About  */
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -321,10 +330,19 @@
             left: 0;
         }
 
-        /* Grid seccion proyectos */
+        .a-link-repo {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .a-link-repo:hover h3 {
+            text-shadow: 0 0 15px #0f0;
+        }
+
+        /* Grid  proyectos */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
 
@@ -359,7 +377,7 @@
             opacity: 1;
         }
 
-        /* Sacar glitch a cartas  */
+        /* Quitar glitch de  cards proyectos */
         .project-card.glitch {
             animation: none;
         }
@@ -373,12 +391,6 @@
             letter-spacing: 2px;
         }
 
-        .project-card a {
-            text-decoration: none;
-
-        }
-
-       
         .project-card p {
             color: #0f0;
             margin-bottom: 1.5rem;
@@ -402,7 +414,7 @@
             letter-spacing: 1px;
         }
 
-        /* Contacto */
+        /* Contact Section */
         .contact-section {
             text-align: center;
             padding: 6rem 5%;
@@ -424,12 +436,12 @@
             flex-direction: column;
             gap: 1.5rem;
         }
-
+        a{
+            text-decoration: none;
+        }
         .form-group {
             position: relative;
         }
-
-        
 
         .form-group input,
         .form-group textarea {
@@ -519,4 +531,10 @@
             h2 {
                 font-size: 2rem;
             }
+            
+            nav a {
+            
+                font-size: 15PX;
+        }
+            
         }
