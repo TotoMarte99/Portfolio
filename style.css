@@ -368,6 +368,7 @@
 
         .sector-medium{
            display: flex;
+           margin-top: 40px;
          flex-direction: column; /* apila los elementos verticalmente */
     justify-content: space-between; /* coloca uno arriba y otro abajo */
     height: 100%; 
@@ -381,7 +382,8 @@
             display: flex;
             justify-content: center;
             gap: 2rem;
-            margin-top: 3rem;
+            margin-top: 1rem;
+
         }
         .project-card::before {
             content: '';
