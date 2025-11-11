@@ -366,6 +366,23 @@
             overflow: hidden;
         }
 
+        .sector-medium{
+           display: flex;
+         flex-direction: column; /* apila los elementos verticalmente */
+    justify-content: space-between; /* coloca uno arriba y otro abajo */
+    height: 100%; 
+            
+        }
+        .sector-medium h2{
+            font-size: 40px;
+        }
+
+        .cta-buttons2{
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
         .project-card::before {
             content: '';
             position: absolute;
@@ -729,6 +746,10 @@
             h2 {
                 font-size: 1.5rem;
             }
+
+            .sector-medium h2{
+                   font-size: 1.5rem;
+        }
             
             nav a {
             
