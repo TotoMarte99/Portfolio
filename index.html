@@ -41,7 +41,9 @@
         <section class="hero" id="home">
             <h1 class="glitch">TOMAS MARTELON</h1>
             <p class="subtitle">Analista Programador</p>
-            <div class="typing-effect" id="typing-text"></div>
+            <div id="typing-container">
+                <span id="typing-text"></span><span id="cursor"></span>
+            </div>
             <div class="social-links">
                     <a href="https://github.com/TotoMarte99" target="_blank" aria-label="GitHub" target="_blank">
                         <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24">
@@ -85,6 +87,20 @@
             <h2>Proyectos</h2>
             <div class="projects-grid">
                 <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img/ApiArchivos.png" alt="Api-Achivos" />
+                    </div>
+                    <a class="a-link-repo" href="https://github.com/TotoMarte99/API-SecFiles" target="_blank"><h3>API Seguridad Archivos</h3></a>
+                    <p>API REST desarrollada en C# (.NET 8) que permite escanear archivos subidos para detectar malware usando Windows Defender. Incluye validaciones de seguridad como extensión de archivo, MIME type, doble extensión y genera el hash SHA256 del archivo para auditoría.</p>
+                    <div class="project-tags">
+                        <span class="tag">C#</span>
+                        <span class="tag">.NET</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img/SmartTicket.png" alt="SmartTicket" />
+                    </div>
                     <a class="a-link-repo" href="https://smart-ticket-chi.vercel.app/" target="_blank"><h3>SmartTicket</h3></a>
                     <p>Diseño y Desarrollo de landing page, para aplicacion web enfocada al control de gastos mediante el uso de inteligencia artificial. La aplicacion permite al usuario llevar un control de sus gastos
                         realizando una foto a su ticket de compra, y mediante IA se extraen todos los datos del ticket, se almacenan y permite tener ademas de control de gastos, comparación de precios entre comercios.
@@ -97,6 +113,9 @@
                 </div>
 
                 <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img/GestorTM.png" alt="GestorTM" />
+                    </div>
                     <a class="a-link-repo" href="https://github.com/TotoMarte99/Dashboard-GestorTM" target="_blank"><h3>Sistema de Gestión Integral</h3></a>
                     <p>Dashboard en Blazor, control de productos, ventas, estadísticas, generación de tickets venta y órdenes de reparación</p>
                     <div class="project-tags">
@@ -106,6 +125,9 @@
                 </div>
 
                 <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img/ApiMaquinas.png" alt="API-Maquinas" />
+                    </div>
                    <a class="a-link-repo" href="https://github.com/TotoMarte99/API_Maquinas" target="_blank"><h3>API REST - Gestor</h3></a> 
                     <p>API RESTful desarrollada en C# con .NET 8 y SQL Server para gestionar un catálogo de máquinas. Permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar), búsqueda por filtros y validación de datos.</p>
                     <div class="project-tags">
@@ -115,6 +137,9 @@
                 </div>
 
                 <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img/Screenshot 2025-11-27 225155.png" alt="Generador-QR" />
+                    </div>
                     <a class="a-link-repo" href="https://github.com/TotoMarte99/Generador-QR" target="_blank"><h3>Generador QR</h3></a>
                     <p>Proyecto desarrollado para consumir la API de Woocommerce de tiendas y generar códigos QR en PDF. Estos códigos se utilizan en tiendas físicas permitiendo que cada producto tenga su QR.</p>
                     <div class="project-tags">
@@ -123,6 +148,9 @@
                 </div>
 
                 <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img/GestorClientes.png" alt="Gestor-Clientes" />
+                    </div>
                     <a class="a-link-repo" href="https://github.com/TotoMarte99/SistemaGestorOrdenCliente" target="_blank"><h3>Sistema Gestión Clientes</h3></a>
                     <p>Proyecto académico desarrollado en C# que permite la gestión de clientes y ventas. Utiliza la librería iTextSharp para exportar tickets/órdenes en formato PDF.</p>
                     <div class="project-tags">
@@ -132,17 +160,11 @@
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <a class="a-link-repo" href="https://github.com/TotoMarte99/SistemaEscuela" target="_blank"><h3>Sistema Escuela</h3></a>
-                    <p>Aplicación de escritorio desarrollada en C# con Windows Forms, diseñada para gestionar información de estudiantes en una institución educativa.</p>
-                    <div class="project-tags">
-                        <span class="tag">C#</span>
-                        <span class="tag">Windows Forms</span>
-                        <span class="tag">SQL</span>
-                    </div>
-                </div>
 
                  <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img/Chat.png" alt="ChatBidireccional" />
+                    </div>
                     <a class="a-link-repo" href="https://github.com/TotoMarte99/ChatBidireccional" target="_blank"><h3>Chat Bidireccional Local</h3></a>
                     <p>Chat bidireccional local desarrollado en C# con Windows Forms, que utiliza SQL Server como backend y procedimientos almacenados para gestionar mensajes.</p>
                     <div class="project-tags">
@@ -158,8 +180,11 @@
             <h2>Proyectos Ciberseguridad</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <a class="a-link-repo" href="https://github.com/TotoMarte99/PentestingInforme/blob/main/docs/Informe.pdf" target="_blank"><h3>Informe de pentesting - labs.gf0s.com</h3></a>
-                    <p>Evaluación de seguridad en el servidor labs.gf0s.com con el objetivo de identificar vulnerabilidades y evaluar los riesgos asociados.</p>
+                    <div class="project-image">
+                        <img src="./img/Screenshot 2025-11-14 223738.png" alt="Informe de pentesting - labs.gf0s.com" />
+                    </div>
+                    <a class="a-link-repo" href="https://medium.com/@tomascmartelon" target="_blank"><h3>LavaShop - CTF Inicial</h3></a>
+                    <p>Documentación profesional y verificable la explotación completa de la máquina LavaShop, correspondiente a un entorno de laboratorio.</p>
                     <div class="project-tags">
                         <span class="tag">Ciberseguridad</span>
                         <span class="tag">Pentesting</span>
@@ -167,8 +192,11 @@
                 </div>
 
                 <div class="project-card">
-                   <a class="a-link-repo" href="https://docs.google.com/document/d/1CrIn_c5DYNVjSAqAn9a3XCSM6N9LvD69jnBmFiyM2YA/edit?tab=t.0" target="_blank"><h3>Informe de Prueba de Penetración</h3></a> 
-                    <p>Pentesting en los servidores de labs.gf0s.com llevado a cabo en el HackLab #3 simulando la persecución digital de un cibercriminal ficticio conocido como "TOCHAMA".</p>
+                    <div class="project-image">
+                        <img src="./img/Screenshot 2025-11-19 213759.png" alt="Informe de Prueba de Penetración" />
+                    </div>
+                   <a class="a-link-repo" href="https://medium.com/@tomascmartelon" target="_blank"><h3>OfusPingu - CTF Avanzado</h3></a> 
+                    <p>Documentación profesional y verificable la explotación completa de la máquina OfusPingu, correspondiente a un entorno de laboratorio.</p>
                     <div class="project-tags">
                         <span class="tag">Ciberseguridad</span>
                         <span class="tag">Pentesting</span>
@@ -176,8 +204,11 @@
                 </div>
 
                 <div class="project-card">
-                    <a class="a-link-repo" href="https://docs.google.com/document/d/1qp77KKsvM1uA444zmOUn2CBVkQxP2liaqyUJk0jgXsQ/edit?usp=sharing" target="_blank"><h3>Informe Técnico de Pentesting</h3></a>
-                    <p>Informe técnico de Pentesting utilizando los HackLab de labs.gf0s.com. Mediante la utilización de Wireshark y Hash Cracker se logró identificar credenciales de acceso.</p>
+                    <div class="project-image">
+                        <img src="./img/Screenshot 2025-11-25 230359.png" alt="Informe Técnico de Pentesting" />
+                    </div>
+                    <a class="a-link-repo" href="https://medium.com/@tomascmartelon" target="_blank"><h3>Back To The Future I - CTF Avanzado</h3></a>
+                    <p>Documentación profesional y verificable la explotación completa de la máquina Back To The Future I, correspondiente a un entorno de laboratorio.</p>
                     <div class="project-tags">
                         <span class="tag">Ciberseguridad</span>
                         <span class="tag">Pentesting</span>
@@ -187,10 +218,10 @@
             </div>
             <br>
             <div class="sector-medium">
-                <h2>WriteUps de Ciberseguridad</h2>
+                <h2>NewsLetter</h2>
 
                 <div class="cta-buttons2">
-                    <a href="https://medium.com/@tomascmartelon" class="btn" target="_blank">Acceder a Medium</a>
+                    <a href="https://medium.com/@tomascmartelon" class="btn" target="_blank">Acceder</a>
                     </div>
                 </div>
         </section>
@@ -329,18 +360,21 @@
 
         // Typing effect
         const typingText = document.getElementById('typing-text');
-        const text = '>code.';
+        const cursor = document.getElementById('cursor');
+
+        const text = ">code.";
         let index = 0;
 
         function type() {
             if (index < text.length) {
-                typingText.textContent += text.charAt(index);
-                index++;
-                setTimeout(type, 100);
+            typingText.textContent += text.charAt(index);
+            index++;
+            setTimeout(type, 100);
             }
-        }
+}
 
-        setTimeout(type, 1000);
+setTimeout(type, 1000);
+
 
         // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
